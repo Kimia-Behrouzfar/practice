@@ -59,9 +59,6 @@
 // console.log(err, data);
 // });
 
-// console.log(3);
-// console.log(4);
-
 //promise example
 // const getSomething = () => {
 //   return new Promise((resolve, reject) => {
@@ -103,17 +100,17 @@
 
 //async & await
 
-const getTodos = async () => {
-  const response = await fetch("todos.json");
+// const getTodos = async () => {
+//   const response = await fetch("todos.json");
 
-  if (response.status !== 200) {
-    throw new Error("can not fetch");
-  }
+//   if (response.status !== 200) {
+//     throw new Error("can not fetch");
+//   }
 
-  const data = await response.json();
-  return data;
-};
+//   const data = await response.json();
+//   return data;
+// };
 
-getTodos()
-  .then((data) => console.log("resolved", data))
-  .catch((err) => console.log("rejected", err.message));
+// getTodos()
+//   .then((data) => console.log("resolved", data))
+//   .catch((err) => console.log("rejected", err.message));
