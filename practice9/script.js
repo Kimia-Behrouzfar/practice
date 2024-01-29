@@ -1,9 +1,11 @@
-//Example S9-016-SETS
+//Example S9-016-SETS  *************
+
 const staff = ["waiter", "chef", "waiter", "manager", "chef", "waiter"];
 const staffUnique = [...new Set(staff)];
 // console.log(staffUnique);
 // console.log(new Set("hfghkurghkjs").size);
-//S9-017-Maps Fundamentals are useful than SETS
+
+//S9-017-Maps Fundamentals are useful than SETS  *************
 const resturant = new Map();
 resturant.set("name", "pizza");
 resturant.set(1, "italy");
@@ -36,7 +38,8 @@ resturant.set(arr, "test");
 // console.log(resturant.size);
 
 // console.log(resturant.get(arr));
-//S9-018 Maps Iteration
+
+//S9-018 Maps Iteration  *************
 const question = new Map([
   ["question", "what is the best language in programming?"],
   [1, "c"],
@@ -46,20 +49,41 @@ const question = new Map([
   [true, "correct"],
   [false, "try again"],
 ]);
-console.log(question);
+// console.log(question);
 
 //Quiz app
-console.log(question.get("question"));
-for (const [key, value] of question) {
-  if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
-}
+// console.log(question.get("question"));
+// for (const [key, value] of question) {
+//   if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
+// }
 
-const answer = Number(prompt("your answer"));
-console.log(answer);
+// const answer = Number(prompt("your answer"));
+// console.log(answer);
 
-console.log(question.get(question.get("correct") === answer));
+// console.log(question.get(question.get("correct") === answer));
 
 //convert map to array
-console.log([...question]);
-console.log([...question.keys()]);
-console.log([...question.values()]);
+// console.log([...question]);
+// console.log([...question.keys()]);
+// console.log([...question.values()]);
+
+//S9-021 Working with Srting *************
+
+const airplane = "Tap Air Iran";
+console.log(airplane[0]);
+console.log(airplane[1]);
+console.log(airplane[2]);
+console.log("kia"[2]);
+
+console.log(airplane.length);
+console.log("B345".length);
+
+console.log(airplane.indexOf("r"));
+console.log(airplane.lastIndexOf("a"));
+
+console.log(airplane.slice(5, 7));
+
+console.log(airplane.slice(0, airplane.indexOf(" ")));
+console.log(airplane.slice(airplane.lastIndexOf(" ") + 1));
+
+console.log(airplane.slice(1, -2));
