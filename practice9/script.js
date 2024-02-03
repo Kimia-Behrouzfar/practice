@@ -67,23 +67,51 @@ const question = new Map([
 // console.log([...question.keys()]);
 // console.log([...question.values()]);
 
-//S9-021 Working with Srting *************
+//S9-021 Working with Srting1 *************
 
 const airplane = "Tap Air Iran";
-console.log(airplane[0]);
-console.log(airplane[1]);
-console.log(airplane[2]);
-console.log("kia"[2]);
+// console.log(airplane[0]);
+// console.log(airplane[1]);
+// console.log(airplane[2]);
+// console.log("kia"[2]);
 
-console.log(airplane.length);
-console.log("B345".length);
+// console.log(airplane.length);
+// console.log("B345".length);
 
-console.log(airplane.indexOf("r"));
-console.log(airplane.lastIndexOf("a"));
+// console.log(airplane.indexOf("r"));
+// console.log(airplane.lastIndexOf("a"));
 
-console.log(airplane.slice(5, 7));
+// console.log(airplane.slice(5, 7));
 
-console.log(airplane.slice(0, airplane.indexOf(" ")));
-console.log(airplane.slice(airplane.lastIndexOf(" ") + 1));
+// console.log(airplane.slice(0, airplane.indexOf(" ")));
+// console.log(airplane.slice(airplane.lastIndexOf(" ") + 1));
 
-console.log(airplane.slice(1, -2));
+// console.log(airplane.slice(1, -2));
+
+// console.log(new String("kimia"));
+//S9-022 Working with Srting2 *************
+
+// console.log(airplane.toUpperCase());
+// console.log(airplane.toLowerCase());
+
+//replacing
+const priceGB = "234,3$";
+// console.log(priceGB);
+const priceUS = priceGB.replace("$", "%").replace(",", ".");
+// console.log(priceUS);
+
+const message = "jgfk door kjdg door kg door";
+// console.log(message.replace("door", "boor"));
+// console.log(message.replace(/door/g, "boor"));
+
+//Booleans
+// console.log(message.includes());
+// console.log(message.startsWith());
+
+//S9-023 Working with Srting3 *************
+
+// console.log("a+nice+string".split("+"));
+
+//S9-025 String method practice *************
+
+const flights = "_Dehjfs_kjsdb;";
