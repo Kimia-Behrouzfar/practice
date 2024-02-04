@@ -43,3 +43,25 @@ const newPassport = function (person) {
 newPassport(jonas);
 checkIn(flight, jonas);
 //005 First-Class and Higher-Order Functions ********
+function count(a, b) {
+  let counter = a + b;
+  return function () {
+    counter++;
+  };
+}
+// console.log(count(1, 2));
+
+// 006 Functions Accepting Callback Functions *******
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(" ");
+  return [first.toUpperCase(), ...others].join(" ");
+};
+
+//Higher-order function
+const transformer = function (str, fn) {
+  console.log(`original: ${str}`);
+  console.log(`transformed: ${fn(str)}`);
+  console.log(`transformed: ${fn.name}`);
+};
+transformer("JavaScript", upperFirstWord);
