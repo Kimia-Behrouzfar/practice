@@ -60,8 +60,27 @@ const upperFirstWord = function (str) {
 
 //Higher-order function
 const transformer = function (str, fn) {
-  console.log(`original: ${str}`);
-  console.log(`transformed: ${fn(str)}`);
-  console.log(`transformed: ${fn.name}`);
+  //   console.log(`original: ${str}`);
+  //   console.log(`transformed: ${fn(str)}`);
+  //   console.log(`transformed: ${fn.name}`);
 };
 transformer("JavaScript", upperFirstWord);
+//another example
+const high5 = function () {
+  //   console.log("hello world");
+};
+document.body.addEventListener("click", high5);
+["jfg", "sfghf", "jhgfd", "yfgf"].forEach(high5);
+// 007 Functions Returning Functions ************
+
+const great = function (greating) {
+  return function (name) {
+    console.log(`${greating} ${name}`);
+  };
+};
+
+const greater = great("hey");
+greater("kiana");
+greater("mia");
+
+great("hiii")("ali");
