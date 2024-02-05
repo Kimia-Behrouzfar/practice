@@ -75,7 +75,7 @@ document.body.addEventListener("click", high5);
 
 const great = function (greating) {
   return function (name) {
-    console.log(`${greating} ${name}`);
+    // console.log(`${greating} ${name}`);
   };
 };
 
@@ -84,3 +84,17 @@ greater("kiana");
 greater("mia");
 
 great("hiii")("ali");
+
+// 008 The call and apply Methods ********
+const lufthansa = {
+  airline: "Lufthansa",
+  iateCode: "LH",
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iateCode} ${flightNum}`
+    );
+  },
+};
+lufthansa.book(244, "kimia");
+lufthansa.book(786, "mia");
