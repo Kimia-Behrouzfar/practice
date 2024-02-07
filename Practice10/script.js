@@ -141,3 +141,19 @@ const poll = {
 document
   .querySelector(".btn")
   .addEventListener("click", poll.registerNumAnswer.bind(poll));
+
+// 011 Immediately Invoked Function Expressions (IIFE) *****
+
+const runOnce = function () {
+  console.log("this will never run again");
+};
+
+runOnce();
+// IIFE
+(function () {
+  console.log("run");
+})();
+
+(() => console.log("also run"))();
+
+// 012 Closures_en ******
