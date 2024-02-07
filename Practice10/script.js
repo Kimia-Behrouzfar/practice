@@ -94,7 +94,50 @@ const lufthansa = {
     console.log(
       `${name} booked a seat on ${this.airline} flight ${this.iateCode} ${flightNum}`
     );
+    this.bookings.push({ flight: `${this.iateCode} ${flightNum}`, name });
   },
 };
-lufthansa.book(244, "kimia");
-lufthansa.book(786, "mia");
+// lufthansa.book(244, "kimia");
+// lufthansa.book(786, "mia");
+// console.log(lufthansa);
+// 009 The bind Method ********
+// 010 Coding Challenge #1 *******
+//  create poll app
+const poll = {
+  question: "what is your favourite programming language?",
+  optins: ["0: Javascript", "1:Python", "2:Rust", "3:c++"],
+  answers: new Array(4).fill(0),
+
+  registerNumAnswer() {
+    //Get answer
+    const answer = Number(
+      prompt(
+        `${this.question}\n${this.optins.join("\n")}\n(Write option number)`
+      )
+    );
+    console.log(answer);
+
+    //Register answer
+    typeof answer === "number" &&
+      answer < this.answers.length &&
+      this.answers[answer]++;
+
+    // console.log(this.answers);
+    this.displayResult();
+    this.displayResult("string");
+  },
+
+  displayResult(type = "array") {
+    if (type === "array") {
+      console.log(this.answers);
+    } else if (type === "string") {
+      //poll results are 13, 2, 4, 1
+      console.log(`poll results are: ${this.answers.join(", ")}`);
+    }
+  },
+};
+// poll.registerNumAnswer();
+
+document
+  .querySelector(".btn")
+  .addEventListener("click", poll.registerNumAnswer.bind(poll));
