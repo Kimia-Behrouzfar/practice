@@ -129,10 +129,10 @@ const poll = {
 
   displayResult(type = "array") {
     if (type === "array") {
-      console.log(this.answers);
+      // console.log(this.answers);
     } else if (type === "string") {
       //poll results are 13, 2, 4, 1
-      console.log(`poll results are: ${this.answers.join(", ")}`);
+      // console.log(`poll results are: ${this.answers.join(", ")}`);
     }
   },
 };
@@ -145,15 +145,64 @@ document
 // 011 Immediately Invoked Function Expressions (IIFE) *****
 
 const runOnce = function () {
-  console.log("this will never run again");
+  // console.log("this will never run again");
 };
 
 runOnce();
 // IIFE
 (function () {
-  console.log("run");
+  // console.log("run");
 })();
 
-(() => console.log("also run"))();
+// (() => console.log("also run"))();
 
-// 012 Closures_en ******
+// 012,13,14    Closures_en ******
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+const booker = secureBooking();
+
+// booker();
+// booker();
+// booker();
+
+//another example 13
+
+let f;
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(a * 2);
+  };
+};
+
+const h = function () {
+  const b = 777;
+  f = function () {
+    console.log(b * 2);
+  };
+};
+
+// g();
+// f();
+
+//re-assigning
+// h();
+// f();
+
+// console.dir(f);
+
+//14
+(function () {
+  const header = document.querySelector("h1");
+  header.style.color = "red";
+
+  document.querySelector("body").addEventListener("click", function () {
+    header.style.color = "blue";
+  });
+})();
