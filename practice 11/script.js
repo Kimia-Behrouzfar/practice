@@ -24,5 +24,16 @@
 
 //004 The new at Method ****
 const arr = [11, 22, 33];
-console.log(arr[1]);
-console.log(arr.at(0));
+// console.log(arr[1]);
+// console.log(arr.at(0));
+
+//005 Looping Arrays forEach *****
+const movements = [100, -234, 23, -87, 56];
+
+movements.forEach(function (movement, i, array) {
+  if (movement > 0) {
+    console.log(`Movement ${i + 1} you deposited ${movement}`);
+  } else {
+    console.log(`Movement ${i + 1} you withdrew ${Math.abs(movement)}`);
+  }
+});
