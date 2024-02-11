@@ -32,8 +32,15 @@ const movements = [100, -234, 23, -87, 56];
 
 movements.forEach(function (movement, i, array) {
   if (movement > 0) {
-    console.log(`Movement ${i + 1} you deposited ${movement}`);
+    // console.log(`Movement ${i + 1} you deposited ${movement}`);
   } else {
-    console.log(`Movement ${i + 1} you withdrew ${Math.abs(movement)}`);
+    // console.log(`Movement ${i + 1} you withdrew ${Math.abs(movement)}`);
   }
 });
+//006 forEach With Maps and Sets *******
+
+// 007 PROJECT Bankist App ********
+
+// 008 Creating DOM Elements *******
+
+// 009 Coding Challenge #1_en *******
