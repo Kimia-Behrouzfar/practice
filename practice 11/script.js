@@ -81,3 +81,6 @@ const deposits = movements.filter(function (mov) {
 });
 console.log(movements);
 console.log(deposits);
+
+const withdrew = movements.filter((mov) => mov < 0);
+console.log(withdrew);
