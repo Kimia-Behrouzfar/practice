@@ -61,6 +61,17 @@ const movementDes = movements.map(
   //   return `Movement ${i + 1} you withdrew ${Math.abs(mov)}`;
   // }
 );
-console.log(movementDes);
+// console.log(movementDes);
 
 // 012 Computing Usernames *********
+
+const createUser = function (user) {
+  // const user = "Sjg Tjhgb Wkjhg"; // stw
+  const username = user
+    .toLowerCase()
+    .split(" ")
+    .map((name) => name[0])
+    .join("");
+  return username;
+};
+console.log(createUser("Sjg Tjhgb Wkjhg"));
