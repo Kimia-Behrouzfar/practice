@@ -44,3 +44,21 @@ movements.forEach(function (movement, i, array) {
 // 008 Creating DOM Elements *******
 
 // 009 Coding Challenge #1_en *******
+
+// 010 Data Transformations map, filter, reduce ******
+
+// 012 Computing Usernames *********
+
+const movementDes = movements.map(
+  (mov, i) =>
+    `Movement ${i + 1} you ${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(
+      mov
+    )}`
+
+  // if (mov > 0) {
+  //   return `Movement ${i + 1} you deposited ${mov}`;
+  // } else {
+  //   return `Movement ${i + 1} you withdrew ${Math.abs(mov)}`;
+  // }
+);
+console.log(movementDes);
