@@ -47,7 +47,7 @@ movements.forEach(function (movement, i, array) {
 
 // 010 Data Transformations map, filter, reduce ******
 
-// 012 Computing Usernames *********
+// 011 The map Method *********
 
 const movementDes = movements.map(
   (mov, i) =>
@@ -62,3 +62,5 @@ const movementDes = movements.map(
   // }
 );
 console.log(movementDes);
+
+// 012 Computing Usernames *********
