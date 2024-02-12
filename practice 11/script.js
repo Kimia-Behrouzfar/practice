@@ -74,4 +74,10 @@ const createUser = function (user) {
     .join("");
   return username;
 };
-console.log(createUser("Sjg Tjhgb Wkjhg"));
+// console.log(createUser("Sjg Tjhgb Wkjhg"));
+// 013 The filter Method_en **********
+const deposits = movements.filter(function (mov) {
+  return mov > 0;
+});
+console.log(movements);
+console.log(deposits);
