@@ -86,3 +86,10 @@ const withdrew = movements.filter((mov) => mov < 0);
 // console.log(withdrew);
 
 // 014 The reduce Method *********
+// Max value
+const max = movements.reduce((acc, mov) => {
+  if (acc > mov) return acc;
+  else return mov;
+}, movements[0]);
+console.log(max);
+// 015 Coding Challenge #2 ********
