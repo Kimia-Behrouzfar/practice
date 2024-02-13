@@ -91,5 +91,15 @@ const max = movements.reduce((acc, mov) => {
   if (acc > mov) return acc;
   else return mov;
 }, movements[0]);
-console.log(max);
+// console.log(max);
 // 015 Coding Challenge #2 ********
+const calAvreg = function (ages) {
+  const humanAges = ages.map((age) => (age <= 2 ? 2 * age : 16 + age * 4));
+  // console.log(humanAges);
+  const adult = humanAges.filter((age) => age >= 18);
+  // console.log(adult);
+  const avreage = adult.reduce((acc, age) => acc + age, 0) / adult.length;
+  return avreage;
+};
+const avg = calAvreg([2, 4, 6, 9]);
+console.log(avg);
