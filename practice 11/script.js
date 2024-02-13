@@ -79,8 +79,10 @@ const createUser = function (user) {
 const deposits = movements.filter(function (mov) {
   return mov > 0;
 });
-console.log(movements);
-console.log(deposits);
+// console.log(movements);
+// console.log(deposits);
 
 const withdrew = movements.filter((mov) => mov < 0);
-console.log(withdrew);
+// console.log(withdrew);
+
+// 014 The reduce Method *********
