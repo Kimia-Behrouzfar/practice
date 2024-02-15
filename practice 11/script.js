@@ -102,4 +102,5 @@ const calAvreg = function (ages) {
   return avreage;
 };
 const avg = calAvreg([2, 4, 6, 9]);
-console.log(avg);
+// console.log(avg);
+// 016 The Magic of Chaining Methods ******
