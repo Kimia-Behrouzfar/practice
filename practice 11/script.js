@@ -104,3 +104,12 @@ const calAvreg = function (ages) {
 const avg = calAvreg([2, 4, 6, 9]);
 // console.log(avg);
 // 016 The Magic of Chaining Methods ******
+// 017 Coding Challenge #3 *****
+// 018 The find Method ******
+const number = [100, -234, 23, -87, 56];
+const first = number.find((mov) => mov < 0);
+// console.log(number);
+// console.log(first);
+// 019 Implementing Login *******
+
+// 020 Implementing Transfers *******
