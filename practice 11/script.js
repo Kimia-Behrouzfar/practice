@@ -113,3 +113,17 @@ const first = number.find((mov) => mov < 0);
 // 019 Implementing Login *******
 
 // 020 Implementing Transfers *******
+
+// 021 The findIndex Method ******
+
+// 022 some and every
+const anyDepo = movements.some((mov) => mov > 0);
+console.log(anyDepo);
+const anyDepost = movements.every((mov) => mov > 0);
+console.log(anyDepost);
+// 023 flat and flatMap
+// 024 Sorting Arrays
+// 025 More Ways of Creating and Filling Arrays
+// 026 Summary Which Array Method to Use
+// 027 Array Methods Practice_en
+// 028 Coding Challenge #4_en
