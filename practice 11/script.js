@@ -118,13 +118,15 @@ const first = number.find((mov) => mov < 0);
 
 // 022 some and every
 const anyDepo = movements.some((mov) => mov > 0);
-console.log(anyDepo);
+// console.log(anyDepo);
 const anyDepost = movements.every((mov) => mov > 0);
-console.log(anyDepost);
+// console.log(anyDepost);
 // 023 flat and flatMap
 const array = [[1, 2], [3, 4, 5, 6], 9, 11];
-console.log(array.flat());
+// console.log(array.flat());
 // 024 Sorting Arrays
+const owners = ["bfj", "fjf", "ajdfh"];
+console.log(owners.sort());
 // 025 More Ways of Creating and Filling Arrays
 // 026 Summary Which Array Method to Use
 // 027 Array Methods Practice_en
