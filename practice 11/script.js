@@ -23,7 +23,7 @@
 // console.log(letters.join("-"));
 
 //004 The new at Method ****
-const arr = [11, 22, 33];
+// const arr = [11, 22, 33];
 // console.log(arr[1]);
 // console.log(arr.at(0));
 
@@ -126,8 +126,19 @@ const array = [[1, 2], [3, 4, 5, 6], 9, 11];
 // console.log(array.flat());
 // 024 Sorting Arrays
 const owners = ["bfj", "fjf", "ajdfh"];
-console.log(owners.sort());
+// console.log(owners.sort());
 // 025 More Ways of Creating and Filling Arrays
+const arr = [1, 2, 3, 4, 5, 6];
+arr.fill(22, 2, 5);
+console.log(arr);
+const x = new Array(5);
+console.log(x);
+x.fill(4, 2, 3);
+console.log(x);
+//Array form
+const y = Array.from({ length: 5 }, () => 2);
+console.log(y);
 // 026 Summary Which Array Method to Use
 // 027 Array Methods Practice_en
+
 // 028 Coding Challenge #4_en
