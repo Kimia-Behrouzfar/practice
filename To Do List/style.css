@@ -48,7 +48,7 @@ input {
 button {
   border: none;
   outline: none;
-  background: #ff5945;
+  background: #4e085f;
   color: #fff;
   padding: 16px 50px;
   font-size: 16px;
@@ -81,4 +81,19 @@ ul li.checked {
 }
 ul li.checked::before {
   background-image: url(./photo_2025-01-25_11-34-33.jpg);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background: #edeef0;
 }
