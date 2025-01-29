@@ -1,28 +1,32 @@
 # practice
 
 Search Food Project🍲:
-This a box for search food base on name to find food with picture,name and a button for recipe food.
-i use API for calling food and their info by fetch and then.
-when you click a View Recipe, you see recipe of food and make it in house🏠
+This a box for search food base on it's name.it display picture,name and a button for recipe food to find food.
+i use API to fetch food info.
+when you click a 'View Recipe', you see recipe of food and make it at house🏠
 that's it bye😄
 
 <!-- //////////////////////////////////// -->
 
 Img slider Project 🖼️:
-This a multiple photo that i show with slider and use html,css and js for show next or prev photo!
+This is a slider that displays multiple photos.i use html,css and js to show next or prev photo!
 that's it bye😄
 
 <!-- //////////////////////////////////// -->
 
 To Do List Project ✅:
-This is my favourit one, you can write your task, when you done it clicked the button that you complete task and you delete,add another one.
-by DOM js!
+This is my favorit one!You can write your tasks, mark them as completed by clicking a button, and delete or add new tasks.
+I used DOM manipulation in JavaScript.
 that's it bye😄
 
 <!-- //////////////////////////////////// -->
 
 Dictionary Project 📗:
-This is a simple dictionary that i use from API (thank's god without filtering!) and call it in js file and pick up any item from source of dictionary api and design with html & css!
+This is a simple dictionary that uses an API (thankfullt, without filtering!) and call it in js file,picked items from the dictionary's data source and designed it with html & css!
 that's it bye😄
 
 <!-- //////////////////////////////////// -->
+
+Signup Project 💙:
+This is signup form that i use js to validate the email and password with diffrent conditional.
+that's it bye😄
