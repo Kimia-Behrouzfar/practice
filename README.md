@@ -18,3 +18,11 @@ To Do List Project ✅:
 This is my favourit one, you can write your task, when you done it clicked the button that you complete task and you delete,add another one.
 by DOM js!
 that's it bye😄
+
+<!-- //////////////////////////////////// -->
+
+Dictionary Project 📗:
+This is a simple dictionary that i use from API (thank's god without filtering!) and call it in js file and pick up any item from source of dictionary api and design with html & css!
+that's it bye😄
+
+<!-- //////////////////////////////////// -->

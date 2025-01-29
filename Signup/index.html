@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>Singup</header>
+      <form action="https://www.codinglabweb.com/">
+        <div class="field email-field">
+          <div class="input-field">
+            <input
+              class="email"
+              type="email"
+              placeholder="Enter your email...."
+            />
+          </div>
+          <span class="error email-error">
+            <i class="fa-solid fa-circle-exclamation error-icon"></i>
+            <p class="error-text">Please enter a valid email</p>
+          </span>
+        </div>
+        <div class="field">
+          <div class="input-field create-password">
+            <input
+              class="password"
+              type="password"
+              placeholder="Create password...."
+            />
+            <i class="fa-solid fa-eye-slash show-hide"></i>
+          </div>
+          <span class="error password-error">
+            <i class="fa-solid fa-circle-exclamation error-icon"></i>
+            <p class="error-text">
+              Please enter atleast 8 charatcer with number,symbol,small and
+              capital letter.
+            </p>
+          </span>
+        </div>
+        <div class="field">
+          <div class="input-field confirm-password">
+            <input
+              class="cPassword"
+              type="password"
+              placeholder="Confirm password...."
+            />
+            <i class="fa-solid fa-eye-slash show-hide"></i>
+          </div>
+          <span class="error cPassword-error">
+            <i class="fa-solid fa-circle-exclamation error-icon"></i>
+            <p class="error-text">Password don't match</p>
+          </span>
+        </div>
+        <div class="input-field button">
+          <input type="submit" value="Submit Now" />
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
