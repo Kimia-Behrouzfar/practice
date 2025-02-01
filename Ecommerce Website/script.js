@@ -74,18 +74,18 @@ function addProductTo(title, price, productImg) {
     alert("You have already add this item to cart");
     return;
   }
-}
-const cartBoxContent = `
- <img src="${productImg}" alt="" class="cart-img" />
-              <div class="detail-box">
-                <div class="cart-product-title">${title}</div>
-                <div class="cart-price">${price}</div>
-                <input type="number" value="1" class="cart-quantity" />
-              </div>
-              <i class="fa-solid fa-trash cart-remove"></i>
-
-`;
-cartShopBox = innerHTML = cartBoxContent;
+  const cartBoxContent = `
+  <img src=${productImg} alt="" class="cart-img" />
+  <div class="detail-box">
+  <div class="cart-product-title">${title}</div>
+  <div class="cart-price">${price}</div>
+  <input type="number" value="1" class="cart-quantity" />
+  </div>
+  <i class="fa-solid fa-trash cart-remove"></i>
+  
+  `;
+  }
+cartShopBox.innerHTML = cartBoxContent;
 cartItems.append(cartShopBox);
 cartShopBox
   .getElementsByClassName("cart-remove")[0]
@@ -93,10 +93,11 @@ cartShopBox
 cartShopBox
   .getElementsByClassName("cart-quantity")[0]
   .addEventListener("change", quantityChanged);
+
 function updateTotal() {
   const cartContent = document.getElementsByClassName("cart-content")[0];
   const cartBoxes = cartContent.getElementsByClassName("cart-box");
-  const total = 0;
+  let total = 0; // Changed 'const' to 'let' to allow reassignment
   for (let i = 0; i < cartBoxes.length; i++) {
     const cartBox = cartBoxes[i];
     const priceElement = cartBox.getElementsByClassName("cart-price")[0];
@@ -107,11 +108,11 @@ function updateTotal() {
   }
   total = Math.round(total * 100) / 100;
 
-  document.getElementsByClassName(("total-price"[0].innerHTML = "$" + total));
+  document.getElementsByClassName("total-price")[0].innerHTML = "$" + total; // Fixed the incorrect syntax
 }
 // cartIcon.addEventListener("click", () => {
 //   console.log(cart.classList.add("active"));
 // });
 // closeCart.addEventListener("click", () => {
-//   cart.classList.remove("active");
+//   cart.classList.remove("active"));
 // });
