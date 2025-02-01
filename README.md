@@ -30,3 +30,10 @@ that's it bye😄
 Signup Project 💙:
 This is signup form that i use js to validate the email and password with diffrent conditional.
 that's it bye😄
+
+<!-- //////////////////////////////////// -->
+
+Select Menu Project 💙:
+This is Select Menu for social media that i use js and some function,so easy!
+And i want create this project with dark ^ light mood:)
+that's it bye😄

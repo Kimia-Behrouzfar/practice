@@ -4,23 +4,48 @@
   font-family: "Times New Roman", Times, serif;
   box-sizing: border-box;
 }
+:root {
+  --primary-color:#edf2fc 
+  --secondary-color:#212121
+}
+.dark{
+  --primary-color: #000106;
+  --secondary-color: #fff;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(#f44336, #730228);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.mood {
+  padding: 50px;
+  font-size: 35px;
+  cursor: pointer;
+}
+.mood i {
+  margin-right: 30px;
+}
 .selector {
   width: 350px;
+
+}
+#selectText {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+li p {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 #selectField {
   width: 100%;
   padding: 15px 20px;
   margin-bottom: 30px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: var(--primary-color);
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -33,7 +58,7 @@
 }
 #list {
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: var(--primary-color);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -52,7 +77,7 @@
   width: 25px;
 }
 .options:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background-color: var(--primary-color);
 }
 .hide {
   visibility: hidden;

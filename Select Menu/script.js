@@ -12,3 +12,8 @@ selectField.onclick = () => {
 function selectOption(socialMedia) {
   document.getElementById("selectText").textContent = socialMedia;
 }
+// Dark & Light Mood
+const icon = document.querySelector(".icon");
+function dark() {
+  document.body.classList.toggle("dark");
+}
