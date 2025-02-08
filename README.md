@@ -37,3 +37,9 @@ Select Menu Project 💙:
 This is Select Menu for social media that i use js and some function,so easy!
 And i want create this project with dark ^ light mood:)
 that's it bye😄
+
+<!-- //////////////////////////////////// -->
+
+Text To Speech Project 💬:
+That's great one! i just use a web speech api for convert text to speech with design page (html,css)
+that's it bye😄
