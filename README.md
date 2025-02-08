@@ -43,3 +43,9 @@ that's it bye😄
 Text To Speech Project 💬:
 That's great one! i just use a web speech api for convert text to speech with design page (html,css)
 that's it bye😄
+
+<!-- //////////////////////////////////// -->
+
+Quote Project 🖋️:
+i write later!
+that's it bye😄
